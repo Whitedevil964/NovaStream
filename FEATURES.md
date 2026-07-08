@@ -6,7 +6,7 @@ This document serves as a complete catalog of every feature currently built into
 
 ## 🎬 Video & Streaming Engine
 - **Custom MPV Player Integration**: Leverages the highly efficient MPV engine for hardware-accelerated playback (`gpu-next`).
-- **Anime4K Video Upscaling**: (Experimental) Built-in support for Anime4K shaders to upscale 1080p anime to crystal clear 4K in real-time.
+- **Anime4K Video Upscaling**: Built-in support for Anime4K shaders to upscale 1080p anime to crystal clear 4K in real-time. *(While an episode is playing, press `CTRL + 1` through `CTRL + 6` to activate different upscale modes. Press `CTRL + 0` to disable).*
 - **Ad-Free Extraction**: Automatically scrapes and extracts raw `.mp4`/`.m3u8` streams from web sources (via `yt-dlp` and Deno) to bypass all website advertisements.
 - **Auto-Play Next Episode**: Seamlessly transitions to the next episode upon completion.
 - **Continue Watching Hooks**: Saves exact timestamps so users can resume episodes right where they left off.
