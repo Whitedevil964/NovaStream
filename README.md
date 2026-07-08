@@ -120,28 +120,23 @@ Compiled executable lands in `dist/NovaStream.exe`.
 ## 🖼️ Screenshots
 
 <div align="center">
-  <img src="static/img/screenshots/discover.png" alt="Discover Page" width="48%" />
-  <img src="static/img/screenshots/library.png" alt="Library Page" width="48%" />
+  <img src="static/img/screenshots/1.png" alt="Screenshot 1" width="48%" />
+  <img src="static/img/screenshots/2.png" alt="Screenshot 2" width="48%" />
 </div>
 <br>
 <div align="center">
-  <img src="static/img/screenshots/stats.png" alt="Stats Page" width="48%" />
-  <img src="static/img/screenshots/schedule.png" alt="Schedule Page" width="48%" />
+  <img src="static/img/screenshots/3.png" alt="Screenshot 3" width="48%" />
+  <img src="static/img/screenshots/4.png" alt="Screenshot 4" width="48%" />
 </div>
 <br>
 <div align="center">
-  <img src="static/img/screenshots/achievements.png" alt="Achievements Page" width="48%" />
-  <img src="static/img/screenshots/search.png" alt="Search Page" width="48%" />
+  <img src="static/img/screenshots/5.png" alt="Screenshot 5" width="48%" />
+  <img src="static/img/screenshots/6.png" alt="Screenshot 6" width="48%" />
 </div>
 <br>
 <div align="center">
-  <img src="static/img/screenshots/youtube.png" alt="YouTube Downloader" width="48%" />
-  <img src="static/img/screenshots/downloads.png" alt="Downloads Page" width="48%" />
-</div>
-<br>
-<div align="center">
-  <img src="static/img/screenshots/settings-1.png" alt="Settings Menu (Part 1)" width="48%" />
-  <img src="static/img/screenshots/settings-2.png" alt="Settings Menu (Part 2)" width="48%" />
+  <img src="static/img/screenshots/7.png" alt="Screenshot 7" width="48%" />
+  <img src="static/img/screenshots/8.png" alt="Screenshot 8" width="48%" />
 </div>
 
 ## 🗺️ Roadmap
