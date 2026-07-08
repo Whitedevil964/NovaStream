@@ -17,6 +17,12 @@
   <a href="#-license">License</a>
 </p>
 
+<p align="center">
+  <a href="https://discord.gg/jAPG7cQcrC">
+    <img src="https://img.shields.io/badge/Discord-Join%20Community-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Join our Discord Server" />
+  </a>
+</p>
+
 ---
 
 ## 🌟 Why NovaStream
