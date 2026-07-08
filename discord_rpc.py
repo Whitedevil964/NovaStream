@@ -36,6 +36,10 @@ def _connect():
             logger.error("Discord RPC enabled but pypresence is not installed.")
             return
             
+        if not _client_id or str(_client_id).strip() == '':
+            logger.warning("Discord RPC enabled but no Client ID provided. Skipping connection.")
+            return
+            
         try:
             _rpc = Presence(_client_id)
             _rpc.connect()

@@ -148,6 +148,10 @@
           <span class="nav-icon">📅</span>
           <span class="nav-label">Schedule</span>
         </button>
+        <button id="tabRadio" class="nav-btn" type="button" aria-selected="false" title="Radio">
+          <span class="nav-icon">📻</span>
+          <span class="nav-label">Radio</span>
+        </button>
 
         <button id="tabAchievements" class="nav-btn" type="button" aria-selected="false" title="Achievements">
           <span class="nav-icon">🏆</span>
@@ -610,6 +614,41 @@
       </div>
     </div>
 
+    <!-- ── OP/ED Radio Panel ── -->
+    <div id="radioPanel" class="tab-panel hidden">
+      <div class="radio-header">
+        <h2 class="section-title">
+          <span class="icon" aria-hidden="true">📻</span>
+          OP/ED Radio
+        </h2>
+        <div class="radio-controls">
+          <select id="radioFilterSelect" class="form-select" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; border-radius: var(--radius-sm); padding: 8px 12px; outline: none;">
+            <option value="both" style="color: black;">Both (OP & ED)</option>
+            <option value="op" style="color: black;">Openings Only</option>
+            <option value="ed" style="color: black;">Endings Only</option>
+          </select>
+          <button id="radioGenerateBtn" class="btn btn-primary" type="button">
+            <span>✨</span> Generate from Library
+          </button>
+        </div>
+      </div>
+      <div class="radio-container">
+        <div class="radio-player-wrapper">
+          <video id="radioVideoPlayer" controls autoplay></video>
+          <div class="radio-now-playing">
+            <h3 id="radioNowPlayingTitle">Click "Generate from Library" to Start</h3>
+            <div id="radioNowPlayingAnime" class="text-muted" style="color: rgba(255,255,255,0.7);">Your personalized anime playlist awaits</div>
+          </div>
+        </div>
+        <div class="radio-queue-wrapper">
+          <h3 style="margin-bottom:15px; font-size: 1.1rem;">Up Next</h3>
+          <div id="radioQueueList" class="radio-queue-list">
+            <div class="empty-state" style="margin-top: 20px; font-size: 0.9rem; color: rgba(255,255,255,0.5); text-align: center;">Queue is empty</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- ── Schedule Panel ── -->
     <div id="schedulePanel" class="tab-panel hidden">
       <section class="schedule-section" aria-label="Airing Schedule">
@@ -919,6 +958,12 @@
           <option value="false">Disabled</option>
         </select>
         <p class="settings-help">Show what you're watching on your Discord profile status.</p>
+        
+        <label for="settingsDiscordClientId" class="settings-label" style="margin-top: 10px; font-size: 0.9rem;">Discord Application Client ID</label>
+        <input type="text" id="settingsDiscordClientId" class="settings-input" placeholder="e.g. 123456789012345678" />
+        <p class="settings-help" style="color: #fbbf24; margin-top: 5px;">
+          ⚠️ Requires your own Application ID. Get one at <a href="https://discord.com/developers/applications" target="_blank" style="color: #60a5fa; text-decoration: underline;">discord.com/developers</a>
+        </p>
       </div>
 
 

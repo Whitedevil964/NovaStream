@@ -79,7 +79,7 @@ init_db()
 import discord_rpc
 _settings = get_all_settings()
 discord_rpc.init(
-    _settings.get('discord_client_id', '1337000000000000000'),
+    _settings.get('discord_client_id', ''),
     _settings.get('discord_rpc_enabled', 'false')
 )
 
@@ -291,7 +291,7 @@ def api_settings_get():
     settings.setdefault('smart_download', 'false')
     settings.setdefault('auto_delete', 'false')
     settings.setdefault('discord_rpc_enabled', 'false')
-    settings.setdefault('discord_client_id', '1337000000000000000') # Placeholder App ID
+    settings.setdefault('discord_client_id', '') # User must provide their own Application ID
     return jsonify(settings), 200
 
 
@@ -331,7 +331,7 @@ def api_settings_post():
     import discord_rpc
     settings = get_all_settings()
     rpc_enabled = settings.get('discord_rpc_enabled', 'false')
-    rpc_client_id = settings.get('discord_client_id', '1337000000000000000')
+    rpc_client_id = settings.get('discord_client_id', '')
     discord_rpc.init(rpc_client_id, rpc_enabled)
     
     if 'smart_download' in data:
@@ -2107,7 +2107,7 @@ if __name__ == '__main__':
     import discord_rpc
     settings = get_all_settings()
     rpc_enabled = settings.get('discord_rpc_enabled', 'false')
-    rpc_client_id = settings.get('discord_client_id', '1337000000000000000')
+    rpc_client_id = settings.get('discord_client_id', '')
     discord_rpc.init(rpc_client_id, rpc_enabled)
 
     import threading

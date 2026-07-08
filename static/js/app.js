@@ -1219,7 +1219,7 @@
       if (dom.settingsSmartDownload) dom.settingsSmartDownload.value = data.smart_download || 'false';
       if (dom.settingsAutoDelete) dom.settingsAutoDelete.value = data.auto_delete || 'false';
       if (dom.settingsDiscordRpc) dom.settingsDiscordRpc.value = data.discord_rpc_enabled || 'false';
-      if (dom.settingsDiscordClientId) dom.settingsDiscordClientId.value = data.discord_client_id || '1337000000000000000';
+      if (dom.settingsDiscordClientId) dom.settingsDiscordClientId.value = data.discord_client_id || '';
 
       // Also sync the Anime tab dropdowns to match user settings
       if (dom.animeQualitySelect && data.default_quality) {
@@ -1241,7 +1241,7 @@
     const smartDown = dom.settingsSmartDownload ? dom.settingsSmartDownload.value : 'false';
     const autoDel = dom.settingsAutoDelete ? dom.settingsAutoDelete.value : 'false';
     const discordRpc = dom.settingsDiscordRpc ? dom.settingsDiscordRpc.value : 'false';
-    const discordClientId = dom.settingsDiscordClientId ? dom.settingsDiscordClientId.value : '1337000000000000000';
+    const discordClientId = dom.settingsDiscordClientId ? dom.settingsDiscordClientId.value : '';
 
     try {
       const res = await fetch('/api/settings', {
