@@ -5,70 +5,106 @@
 <h1 align="center">NovaStream</h1>
 
 <p align="center">
-  <strong>🎬 Your All-in-One Anime Streaming & Media Manager</strong>
+  <strong>🎬 Your anime, your library, your rules — no account, no cloud, no ads.</strong>
 </p>
 
 <p align="center">
-  <a href="#features">Features</a> •
-  <a href="#installation">Installation</a> •
-  <a href="#development">Development</a> •
-  <a href="#screenshots">Screenshots</a> •
-  <a href="#license">License</a>
+  <a href="#-why-novastream">Why NovaStream</a> •
+  <a href="#-features">Features</a> •
+  <a href="#-installation">Installation</a> •
+  <a href="#-development">Development</a> •
+  <a href="#-screenshots">Screenshots</a> •
+  <a href="#-license">License</a>
 </p>
 
 ---
 
+## 🌟 Why NovaStream
+
+Most anime trackers just track. Most players just play. NovaStream is built to be the one app that actually understands *how* you watch — not just what you've seen.
+
+It knows if you're a Night Owl or a Binger. It builds you a **Radio** station out of your own library's openings and endings. It gives you a real-time-upscaled, MPV-powered player instead of a browser `<video>` tag. And at the end of the year, it hands you a fullscreen, animated **Wrapped** — your own anime year, summarized like nothing else in this space does.
+
+Everything lives in a local SQLite file on your machine. No account required. No cloud dependency. Your data is yours.
+
 ## ✨ Features
 
-- 🎌 **Anime Streaming** — Browse, search, and stream anime from multiple providers
-- 📥 **YouTube Downloader** — Download videos and playlists in up to 8K quality
-- 🎵 **Audio Extraction** — Extract audio from any video as MP3/M4A
-- 📚 **Media Library** — Track your watchlist, favorites, and watch progress
-- 🏆 **Achievements System** — Unlock achievements as you explore the app
-- 📊 **Stats Dashboard** — Beautiful visualizations of your watching habits
-- 🎮 **Discord Rich Presence** — Show what you're watching on Discord
-- 🖥️ **MPV Integration** — Stream with the powerful MPV player with upscaling
-- 🌙 **Glassmorphism UI** — Stunning dark-mode interface with smooth animations
-- 🔍 **Discover Page** — Find trending and popular anime
+### 🎬 Video & Streaming Engine
+- **MPV-Powered Playback** — hardware-accelerated, far beyond a browser video tag
+- **Real-Time Anime4K Upscaling** — press `Ctrl+1` through `Ctrl+6` mid-episode to switch upscale modes on the fly, `Ctrl+0` to disable
+- **Auto-Play & Resume** — seamless next-episode transitions, exact-timestamp resume
+
+### 🎨 Interface
+- **Spotlight Hero Carousel** — trailers autoplay silently as you browse Discover
+- **Ambilight** — the active poster's colors bleed into the surrounding UI
+- **3D Card Flips** — posters tilt in 3D space, flip to reveal details on hover
+- **Fully Custom Theming** — pick your own accent color, it applies everywhere instantly
+- **Glassmorphism Throughout** — every dialog, dropdown, and card, no native browser UI in sight
+
+### 📚 Library Intelligence
+- **Franchise Hub** — see the full watch order (sequels, spin-offs, side stories) for any series, powered by Jikan
+- **Cast & Voice Actors** — full character + seiyuu listings per show
+- **Episode Notes** — a running, auto-saving notepad per anime for your own thoughts/theories
+- **Offline Metadata Caching** — posters and character art cached locally, library loads instantly even offline
+
+### 📊 The Part Nobody Else Has
+- **Watch Streaks** — with a genuinely satisfying flame animation for active streaks
+- **Time of Day Insights** — are you a Morning, Afternoon, Evening, or Night watcher?
+- **Achievements** — real milestones, not fluff: "The Binger," "Night Owl," "Genre Explorer"
+- **Smart Recommendations** — built from your own most-watched genre, not a generic trending list
+- **Annual Wrapped** — a fullscreen animated year-in-review, built entirely from your own local watch history
+
+### 📅 Discovery & Extras
+- **OP/ED Radio** — a continuous, shuffled music-video station built from the openings/endings of anime *already in your library*
+- **Airing Calendar** — day-by-day schedule of what's airing this week
+- **Storage Dashboard** — visual breakdown of exactly what's eating your disk space
+
+---
 
 ## 📦 Installation
 
 ### Quick Install (Recommended)
 
-1. Go to the [**Releases**](../../releases) page
+1. Go to the [**Releases**](https://github.com/Whitedevil964/NovaStream/releases) page
 2. Download `NovaStream_Setup.exe`
-3. Run the installer and choose your install location
-4. Launch NovaStream from your Desktop or Start Menu!
+3. Run the installer, pick your install location
+4. Launch from Desktop or Start Menu
 
 ### Prerequisites
 
 - **Windows 10/11** (64-bit)
 - **Node.js** v18+ — [Download](https://nodejs.org/)
-- **FFmpeg** — Required for video merging and audio extraction ([Download](https://ffmpeg.org/download.html))
+- **Deno** — required by the scraper backend — [Download](https://deno.com/)
+- **FFmpeg** — required for video merging and audio extraction — [Download](https://ffmpeg.org/download.html)
+
+### 🎮 Discord Rich Presence Setup (optional)
+
+Discord RPC needs your own Discord Application to work:
+
+1. Go to [discord.com/developers/applications](https://discord.com/developers/applications), create a new application
+2. Copy its **Application ID**
+3. Paste it into NovaStream's Settings → Discord Client ID
+4. Toggle Discord RPC on in Settings
+
+---
 
 ## 🛠️ Development
 
 ### From Source
 
 ```bash
-# Clone the repository
-git clone https://github.com/YOUR_USERNAME/NovaStream.git
+git clone https://github.com/Whitedevil964/NovaStream.git
 cd NovaStream
 
-# Install Python dependencies
 pip install -r requirements.txt
-
-# Install Node.js dependencies
 npm install
 
-# Run the app
 python app.py
 ```
 
 ### Building the Executable
 
 ```bash
-# Build with PyInstaller
 python -m PyInstaller --name NovaStream --onefile --noconsole ^
   --icon="static\img\logo.ico" ^
   --add-data "templates;templates" ^
@@ -79,18 +115,24 @@ python -m PyInstaller --name NovaStream --onefile --noconsole ^
   app.py -y
 ```
 
-The compiled executable will be in `dist/NovaStream.exe`.
+Compiled executable lands in `dist/NovaStream.exe`.
 
 ## 🖼️ Screenshots
 
 > *Screenshots coming soon!*
+
+## 🗺️ Roadmap
+
+- 📖 Built-in Manga Reader (MangaDex integration)
+- 👤 Account system for profile sync
+- ☁️ Cloud backup / cross-device sync
 
 ## 📁 Project Structure
 
 ```
 NovaStream/
 ├── app.py               # Flask web server & API routes
-├── main.py              # Desktop GUI wrapper (CustomTkinter)
+├── main.py              # Desktop GUI wrapper (CustomTkinter, experimental/unmaintained)
 ├── database.py          # SQLite persistence layer
 ├── downloader.py        # yt-dlp download engine
 ├── anime_scraper.js     # Node.js anime source scraper
@@ -103,8 +145,8 @@ NovaStream/
 │   ├── css/             # Stylesheets
 │   ├── js/              # Frontend JavaScript
 │   └── img/             # Icons & assets
-├── installer.iss        # Inno Setup installer script
-└── requirements.txt     # Python dependencies
+├── installer.iss         # Inno Setup installer script
+└── requirements.txt      # Python dependencies
 ```
 
 ## ⚙️ Tech Stack
@@ -114,29 +156,30 @@ NovaStream/
 | Backend | Python, Flask |
 | Frontend | HTML, CSS, JavaScript |
 | Desktop | pywebview, CustomTkinter |
-| Scraping | Node.js, Puppeteer |
+| Scraping | Node.js, Deno, Puppeteer |
 | Downloads | yt-dlp, FFmpeg |
 | Player | MPV |
+| Metadata | Jikan API, AnimeThemes API |
 | Database | SQLite |
 | Installer | Inno Setup |
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to:
-
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
+3. Commit your changes
+4. Push to the branch
 5. Open a Pull Request
 
 ## 📄 License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+See the [LICENSE](LICENSE) file for details.
+
+> **Note:** confirm this matches your actual `LICENSE` file before relying on it — GPL-3.0 and MIT carry very different terms for anyone who forks or reuses this code.
 
 ## ⚠️ Disclaimer
 
-NovaStream is intended for personal use only. Please respect copyright laws and the terms of service of the content providers. The developers are not responsible for any misuse of this software.
+NovaStream is intended for personal use only. It scrapes anime streaming sources that are not officially licensed to redistribute this content. Please respect copyright laws and the terms of service of any content providers in your jurisdiction. The developers are not responsible for any misuse of this software.
 
 ---
 
