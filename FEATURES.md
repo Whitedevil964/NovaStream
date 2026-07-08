@@ -36,9 +36,7 @@ This document serves as a complete catalog of every feature currently built into
 
 ## 📅 Discovery & Extras
 - **Airing Release Calendar**: A day-by-day schedule tab showing exactly what anime are airing today (Monday-Sunday).
-- **OP/ED Radio Playlist**: The "Radio" tab gathers all the Openings and Endings from the user's library and creates a continuous, randomized music video stream (via `animethemes.moe`).
 - **Discord Rich Presence (RPC)**: Automatically updates the user's Discord status to show the anime and episode they are currently watching.
-- **Built-in Manga Reader**: Seamlessly transition from watching anime to reading the source material via MangaDex integration.
 - **Storage Management Dashboard**: Visual pie charts showing disk usage for cached images, downloaded episodes, and database size.
 
 ## ⚙️ System Architecture
