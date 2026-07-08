@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+*.manifest
+
+# PyInstaller
+NovaStream.spec
+dist/
+build/
+dist_obfuscated/
+NovaStream_Setup.exe
+
+# Node
+node_modules/
+
+# Database & user data
+*.db
+data/
+downloads/
+chrome_data/
+scratch/
+temp_stats.json
+library.db
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Logs
+*.log
+
+# Agents & AI
+.agents/
+
+# Large binaries — users download MPV separately
+MPV/
+
+# Upscale shaders bundled separately
+Upscale/
+
+# Reference repos (not part of NovaStream source)
+aniyomi-main/
+
+# Dev files not needed in repo
+Logo_Options/
+idea.pdf
+*.vbs
+PROJECT_LOG.md
+NEXT_UPDATE.md
+Feature_Ideas.md
+NovaStream_Project_Explanation.md
+NovaStream_Project_Overview.md
+package-lock.json

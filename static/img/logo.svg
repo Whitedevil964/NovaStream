@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="grd" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="50%" style="stop-color:#2563eb"/>
+      <stop offset="100%" style="stop-color:#06b6d4"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <circle cx="60" cy="60" r="56" stroke="url(#grd)" stroke-width="3" fill="rgba(124,58,237,0.08)"/>
+  <!-- Play triangle -->
+  <path d="M48 38 L48 82 L82 60 Z" fill="url(#grd)" filter="url(#glow)" opacity="0.9"/>
+  <!-- Download arrow -->
+  <line x1="60" y1="70" x2="60" y2="100" stroke="url(#grd)" stroke-width="4" stroke-linecap="round"/>
+  <polyline points="50,92 60,102 70,92" stroke="url(#grd)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>
