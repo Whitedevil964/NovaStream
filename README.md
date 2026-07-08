@@ -136,6 +136,12 @@ Compiled executable lands in `dist/NovaStream.exe`.
 <br>
 <div align="center">
   <img src="static/img/screenshots/youtube.png" alt="YouTube Downloader" width="48%" />
+  <img src="static/img/screenshots/downloads.png" alt="Downloads Page" width="48%" />
+</div>
+<br>
+<div align="center">
+  <img src="static/img/screenshots/settings-1.png" alt="Settings Menu (Part 1)" width="48%" />
+  <img src="static/img/screenshots/settings-2.png" alt="Settings Menu (Part 2)" width="48%" />
 </div>
 
 ## 🗺️ Roadmap
