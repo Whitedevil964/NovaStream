@@ -119,7 +119,15 @@ Compiled executable lands in `dist/NovaStream.exe`.
 
 ## 🖼️ Screenshots
 
-> *Screenshots coming soon!*
+<div align="center">
+  <img src="static/img/screenshots/discover.png" alt="Discover Page" width="48%" />
+  <img src="static/img/screenshots/library.png" alt="Library Page" width="48%" />
+</div>
+<br>
+<div align="center">
+  <img src="static/img/screenshots/stats.png" alt="Stats Page" width="48%" />
+  <img src="static/img/screenshots/schedule.png" alt="Schedule Page" width="48%" />
+</div>
 
 ## 🗺️ Roadmap
 
